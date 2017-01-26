@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Michał Smolarek | portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/bars.css">
+    <meta name="keywords" content="Portfolio, Michał, Smolarek, Web, Developer, full, stack, shop, online">
+    <meta name="description" content="Michał Smolarek - young webdeveloper from Poland.">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="menu">
+
+        <div class="home">
+            <a href="index.html"><img src="img/home.png" alt="home"></a>
+        </div>
+        <div class="about"><img src="img/about.png" alt="about">
+        </div>
+        <div class="projects"><img src="img/projects.png" alt="projects"></div>
+        <div class="contact"><img src="img/contact.png" alt="contact"></div>
+
+    </div>
+
+    <div id="welcome">
+
+        <div id="top">
+
+
+            <ul>
+                <li><a class="contact" href="#">Contact</a></li>
+                <li><a class="projects" href="#">Projects</a></li>
+                <li><a class="about" href="#">About</a></li>
+                <li><a class="home" href="index.html">Home</a></li>
+            </ul>
+
+
+        </div>
+
+        <p class="hello"></p>
+
+        <div class="arrow"></div>
+
+
+    </div>
+
+    <div id="about">
+        <div class="content">
+
+            <h2>About me.</h2>
+
+            <p>My name is Michał, I'm a junior webdeveloper from Poland. </p>
+            <p>I'm currently student of 1 year of programming.</p>
+            <p>I'm going to be full stack web developer.</p>
+
+        </div>
+    </div>
+
+    <div id="me">
+        <div id="skills">
+            <div class="content">
+
+                <h2>My skills.</h2>
+
+
+                <div>
+                    <h3>HTML</h3>
+                    <div class="meter animate">
+                        <span style="width: 90%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>CSS</h3>
+                    <div class="meter animate">
+                        <span style="width: 80%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>JAVASCRIPT</h3>
+                    <div class="meter animate">
+                        <span style="width: 55%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>PHP</h3>
+                    <div class="meter animate">
+                        <span style="width: 45%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>MYSQL QUERIES</h3>
+                    <div class="meter animate">
+                        <span style="width: 60%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>RESPONSIVE WEB DESIGN</h3>
+                    <div class="meter animate">
+                        <span style="width: 70%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>PHOTOSHOP</h3>
+                    <div class="meter animate">
+                        <span style="width: 45%"><span></span></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <!-- end skills -->
+
+        <div id="learn">
+            <div class="content">
+
+                <h2>I'm learning.</h2>
+
+                <div>
+                    <h3>ANGULARJS</h3>
+                    <div class="meter animate">
+                        <span style="width: 10%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>SASS/LESS</h3>
+                    <div class="meter animate">
+                        <span style="width: 15%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>JQUERY</h3>
+                    <div class="meter animate">
+                        <span style="width: 12%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>BASIC C++</h3>
+                    <div class="meter animate">
+                        <span style="width: 35%"><span></span></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>ENGLISH</h3>
+                    <div class="meter animate">
+                        <span style="width: 65%"><span></span></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END LEARN -->
+    </div>
+    <!-- END ME -->
+
+
+    <div id="projects">
+        <h2>Best projects.</h2>
+        <div class="content">
+
+
+
+            <div class="project">
+                <div>
+                    <p>Ms-shop - fake online shop</p>
+                    <span>
+                        My best project. The website is ready for the user to register and buy.
+                    </span>
+                </div>
+
+                <a href="http://ms-shop.pe.hu" target="_blank">
+                    <img src="img/msshop.png" alt="ms-shop">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- END PROJECTS -->
+
+
+
+
+    <!-- ----------------------------------------------- -->
+    <script src="js/scripts.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        $(function () {
+            $(".hello").typed({
+                strings: ["Hello, I am Michał.", "I am webdeveloper.", "Welcome to my porfolio."],
+                typeSpeed: 0
+            });
+        });
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
