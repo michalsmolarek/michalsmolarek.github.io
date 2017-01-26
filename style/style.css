@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
+/*html { -webkit-font-smoothing: antialiased; }*/
 html, body {
     width: 100%;
     height: 100%; 
@@ -60,7 +61,7 @@ html, body {
 #welcome {
     width: 100%;
     height: 100%; 
-    background: #2f4f7b;
+    background: #2b415f;
     position: relative;
     margin: auto;
     
@@ -295,7 +296,7 @@ h2 {
 
 #projects .project div {
     opacity:0;
-    color: #fff;
+    color: #ffffff;
     font-size: 1em;
     background: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
@@ -324,7 +325,7 @@ h2 {
 #projects .project div span{
     padding-top: 5px;
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
 }
 #projects .project div:hover span{
     height: 60px;
