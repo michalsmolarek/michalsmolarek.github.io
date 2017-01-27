@@ -103,6 +103,10 @@ html, body {
     float: right;
     display: block;
 }
+
+.top ul {
+    display: block;
+}
 .top a {
     width: 100px; 
     display: block;

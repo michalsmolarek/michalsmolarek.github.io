@@ -64,7 +64,7 @@ html, body {
 }
 
 .top ul {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
@@ -77,7 +77,6 @@ html, body {
     font-size: 13px;
     transition: .3s;
     background: #21344d;
-    margin: 5px;
     border-radius: 3px;
 }
 
