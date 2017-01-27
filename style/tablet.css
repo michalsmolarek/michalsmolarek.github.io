@@ -54,20 +54,20 @@ html, body {
     left: 405px;
 }  
 
-#top {
+.top {
     width: 100%;
     height: auto;
 /*    background: rgba(0, 0, 0, 0.90);*/
     z-index: 13;
     position: absolute;
-    top: 5px;
+    top: 5px; 
 }
 
-#top ul li {
+.top ul li {
     display: flex;
     justify-content: center;
 }
-#top a {
+.top a {
     line-height: 50px;
     width: 80%; 
     display: block;
@@ -80,7 +80,7 @@ html, body {
     margin: 5px;
 }
 
-#top a:hover {
+.top a:hover {
     background: #fff;
     color: #2f4f7b;
     border-radius: 3px;

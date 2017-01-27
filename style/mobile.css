@@ -104,7 +104,7 @@ html, body {
 
 
 
-#top {
+.topm {
     width: 100%;
     height: auto;
 /*    background: rgba(0, 0, 0, 0.90);*/
@@ -114,11 +114,11 @@ html, body {
     transition: .5s;
 }
 
-#top ul li {
+.top ul li {
     display: flex;
     justify-content: center;
 }
-#top a {
+.topm a {
     line-height: 30px;
     width: 80%; 
     display: block;
@@ -131,7 +131,7 @@ html, body {
     margin: 5px;
 }
 
-#top a:hover {
+.topm a:hover {
     background: #fff;
     color: #2f4f7b;
     border-radius: 3px;
