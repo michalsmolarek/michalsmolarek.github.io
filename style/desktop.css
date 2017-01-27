@@ -110,6 +110,7 @@ html, body {
     color: #fff;
     font-size: 13px;
     transition: .3s;
+    background: none;
 }
 
 #top a:hover {
