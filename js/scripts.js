@@ -20,6 +20,31 @@ $(".arrow").click(function () {
 });
 
 
+var bmenu = document.querySelector("#m-button"),
+    topmenu = document.querySelector("#top"),
+    closemenu = document.querySelector("#m-button-close");
+
+bmenu.addEventListener("click", function(){
+    
+    topmenu.style.top = "90px";
+    closemenu.style.display = "block";
+    bmenu.style.display = "none";
+    
+    
+    
+}, false);
+
+closemenu.addEventListener("click", function(){
+    
+    topmenu.style.top = "-560px";
+    bmenu.style.display = "block";
+    closemenu.style.display = "none";
+    
+    
+    
+    
+}, false);
+
 
 
 
