@@ -60,24 +60,29 @@ html, body {
 /*    background: rgba(0, 0, 0, 0.90);*/
     z-index: 13;
     position: absolute;
-    top: 5px; 
+    top: 20px; 
 }
 
 .top ul {
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    
+}
+ul li {
+        margin: 0px 25px;
 }
 .top a {
     width: 100%; 
     display: block;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     color: #fff;
     font-size: 13px;
     transition: .3s;
     background: #21344d;
     border-radius: 3px;
+
 }
 
 .top a:hover {
