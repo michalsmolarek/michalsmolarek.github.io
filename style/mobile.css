@@ -32,12 +32,12 @@ html, body {
 }
 
 .hello {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     position: absolute;
-    bottom:10px;
-    left: 50px;
-    padding: 50px;
+    bottom:100px;
+    left: 10px;
+    padding: 20px;
 
 }
 #welcome .fill {
@@ -68,7 +68,7 @@ html, body {
     justify-content: center;
 }
 #top a {
-    line-height: 50px;
+    line-height: 30px;
     width: 80%; 
     display: block;
     text-align: center;
