@@ -21,7 +21,7 @@ $(".arrow").click(function () {
 
 
 var bmenu = document.querySelector("#m-button"),
-    topmenu = document.querySelector(".top"),
+    topmenu = document.querySelector(".topm"),
     closemenu = document.querySelector("#m-button-close");
 
 bmenu.addEventListener("click", function(){
