@@ -35,9 +35,9 @@ html, body {
     font-size: 30px;
     color: #fff;
     position: absolute;
-    bottom:40px;
-    left: 0;
-    padding: 170px;
+    bottom:10px;
+    left: 50px;
+    padding: 50px;
 
 }
 #welcome .fill {
@@ -56,10 +56,11 @@ html, body {
 
 #top {
     width: 100%;
-    height: 50px;
-    top: 50px;
-    
+    height: auto;
+/*    background: rgba(0, 0, 0, 0.90);*/
+    z-index: 13;
     position: absolute;
+    top: 5px;
 }
 
 #top ul li {
@@ -75,6 +76,8 @@ html, body {
     color: #fff;
     font-size: 13px;
     transition: .3s;
+    background: #21344d;
+    margin: 5px;
 }
 
 #top a:hover {
