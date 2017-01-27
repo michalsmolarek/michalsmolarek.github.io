@@ -101,6 +101,7 @@ html, body {
 
 .top ul li {
     float: right;
+    display: block;
 }
 .top a {
     width: 100px; 

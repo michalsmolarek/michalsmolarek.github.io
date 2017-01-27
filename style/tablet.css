@@ -63,13 +63,13 @@ html, body {
     top: 5px; 
 }
 
-.top ul li {
+.top ul {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .top a {
-    line-height: 50px;
-    width: 80%; 
+    width: 100%; 
     display: block;
     text-align: center;
     padding: 10px;
@@ -78,12 +78,13 @@ html, body {
     transition: .3s;
     background: #21344d;
     margin: 5px;
+    border-radius: 3px;
 }
 
 .top a:hover {
     background: #fff;
     color: #2f4f7b;
-    border-radius: 3px;
+    
 }
 
 
