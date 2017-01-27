@@ -19,5 +19,8 @@ ul, li {
 
 
 #logo{
-    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
 }

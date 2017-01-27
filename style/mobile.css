@@ -55,11 +55,12 @@ html, body {
 }  
 
 #m-button {
-    
+    position: absolute;
     width: 70px;
     height: 50px;
 /*    background: #fff;*/
-    margin: auto;
+    right: 5px;
+    top: 0px;
     padding: 5px;
     
 }
@@ -80,8 +81,8 @@ html, body {
     display: none;
     position: absolute;
     top: 25px;
-    left: 0px;
-    right: 0px;
+    right: 5px;
+
 }
 
 #m-button-close div:nth-child(1) {
@@ -432,7 +433,12 @@ h2 {
 
 /*========================== */
 
-	
+	#logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
 
 
 
