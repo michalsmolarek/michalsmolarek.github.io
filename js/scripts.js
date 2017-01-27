@@ -36,7 +36,7 @@ bmenu.addEventListener("click", function(){
 
 closemenu.addEventListener("click", function(){
     
-    topmenu.style.top = "-560px";
+    topmenu.style.top = "-350px";
     bmenu.style.display = "block";
     closemenu.style.display = "none";
     
