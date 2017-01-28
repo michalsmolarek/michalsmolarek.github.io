@@ -116,6 +116,7 @@ transform: rotate(45deg);
     justify-content: center;
 }
 .topm a {
+    border-radius: 5px;
     line-height: 30px;
     width: 80%; 
     display: block;
