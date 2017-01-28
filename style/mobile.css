@@ -64,11 +64,11 @@ html, body {
     
 }
 #m-button div{
-    background: #000;
+    background: #536d90;
     width: 100%;
     height: 5px;
     margin: 8px 0px;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 #m-button-close {
@@ -83,22 +83,19 @@ html, body {
     right: 15px;
 
 }
-
-#m-button-close div:nth-child(1) {
-    border-radius: 20%;
-    background: #000;
+#m-button-close div{
+    border-radius: 10%;
+    background: #536d90;
     width: 100%;
     height: 5px;
-    transform: rotate(-45deg);
     transform-origin: center;
 }
+#m-button-close div:nth-child(1) {
+    transform: rotate(-45deg);
+
+}
 #m-button-close div:nth-child(2) {
-    border-radius: 20%;
-    background: #000;
-    width: 100%;
-    height: 5px;
-    transform: rotate(45deg);
-    transform-origin: center;
+transform: rotate(45deg);
     margin: -5px 0px;
 }
 
