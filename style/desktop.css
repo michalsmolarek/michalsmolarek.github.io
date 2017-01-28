@@ -1,5 +1,20 @@
+/*
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
+*/
+
+
+
+@font-face {
+    font-family: 'roboto mono';
+    src: url(../fonts/roboto_mono/RobotoMono-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+
 
 /*html { -webkit-font-smoothing: antialiased; }*/
 html, body {
