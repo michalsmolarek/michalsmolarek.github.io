@@ -356,11 +356,11 @@ h2 {
     opacity: 1;
 }
 #projects .project div span{
-    font-size: .8em;
+    font-size: .7em;
     padding-top: 5px;
     opacity: 0;
     transition: .5s;
-    line-height: 10px;
+    line-height: 5px;
 }
 #projects .project div:hover span{
     height: 60px;

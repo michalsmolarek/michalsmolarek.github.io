@@ -197,7 +197,7 @@ h2 {
     height: auto;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background: url(../img/apple-1853306_1920.jpg);
     background-attachment: fixed;
     background-size: 100%;
