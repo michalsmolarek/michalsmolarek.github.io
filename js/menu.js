@@ -1,20 +1,18 @@
-var menu = document.querySelector("#menu");
+'use strict';
+var menu = document.querySelector(".menu");
 
 
-   menu.classList.add("showmenu", "hidden");
+//    menu.classList.add("showmenu", "hidden");
 
-window.addEventListener("scroll", function(){
-    
- 
-    
-    
-    if(document.body.scrollTop >= 500){
-        
-        menu.classList.remove("hidden");
-        
-    }else {
-        menu.classList.add("hidden")
-    }
+    window.addEventListener("scroll", function(){
+
+        if(document.body.scrollTop > 500){
+
+            menu.classList.remove("hidden");
+
+        }else {
+            menu.classList.add("hidden");
+        }
     
 }, false);
 
