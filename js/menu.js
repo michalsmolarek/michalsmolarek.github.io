@@ -1,4 +1,4 @@
-'use strict';
+
 var menu = document.querySelector(".menu");
 
 

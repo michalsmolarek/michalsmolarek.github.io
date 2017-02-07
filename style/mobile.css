@@ -15,10 +15,11 @@ html, body {
 }
 
 
-#menu {
+.menu {
     display: none;
     
 }
+
 
 #welcome {
     width: 100%;
@@ -107,7 +108,7 @@ transform: rotate(45deg);
 /*    background: rgba(0, 0, 0, 0.90);*/
     z-index: 13;
     position: absolute;
-    top: -500px;
+    top: -250px;
     transition: .5s;
 }
 
