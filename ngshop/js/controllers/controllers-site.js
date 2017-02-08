@@ -29,7 +29,7 @@ controllersSite.controller('siteProducts', ['$scope', '$http', 'cartSrv', functi
 
 controllersSite.controller('siteProduct', ['$scope', '$http', '$routeParams','cartSrv', function ($scope, $http, $routeParams, cartSrv) {
 
-    $http.post("model/products.json").
+    $http.get("model/products.json").
     success(function (data, status) {
 
         var products = data;
