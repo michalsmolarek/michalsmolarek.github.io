@@ -34,7 +34,7 @@ cotnrollersAdmin.controller('products', ['$scope', '$http', function ($scope, $h
 
 cotnrollersAdmin.controller('productEdit', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
-    $http.post("model/products.json").
+    $http.get("model/products.json").
     success(function (data) {
 
         var products = data;
@@ -59,7 +59,7 @@ cotnrollersAdmin.controller('productEdit', ['$scope', '$http', '$routeParams', f
 
 cotnrollersAdmin.controller('userEdit', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
-    $http.post("model/users.json").
+    $http.get("model/users.json").
     success(function (data) {
 
         var users = data;
