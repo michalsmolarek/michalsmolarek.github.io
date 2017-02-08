@@ -1,0 +1,31 @@
+<h1>Lista produktów</h1>
+<div class="row">
+    <div class="col-sm-6 ">
+
+
+        <input type="text" class="form-control" placeholder="wyszukaj" ng-model="search">
+
+
+    </div>
+</div>
+
+<p></p>
+
+
+<div ng-controller="products">
+
+
+    <div class="panel panel-default" ng-repeat="product in products | filter: search">
+        <div class="panel-body">
+            <h3><a href="#/product/{{$index}}">{{product.nazwa}}</a>
+            <span class="label label-warning pull-right">Cena: {{product.cena | number:2}} zł / kg</span>
+            </h3>
+            <hr>
+
+            <a href="#/product/{{$index}}" class="btn btn-info">Szczegóły</a>
+            <button ng-click="addToCart(product)" class="btn btn-success">Dodaj do koszyka</button>
+
+        </div>
+    </div>
+
+</div>
