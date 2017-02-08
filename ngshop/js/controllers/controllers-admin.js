@@ -66,9 +66,10 @@ cotnrollersAdmin.controller('userEdit', ['$scope', '$http', '$routeParams', func
 
         $scope.user = users[$routeParams.id];
     }).
-    error(function () {
+    error(function (status) {
 
         console.log("błąd pobierania danych z pliku json.");
+        console.log(status);
 
     });
 
