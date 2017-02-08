@@ -30,15 +30,18 @@ controllersSite.controller('siteProducts', ['$scope', '$http', 'cartSrv', functi
 controllersSite.controller('siteProduct', ['$scope', '$http', '$routeParams','cartSrv', function ($scope, $http, $routeParams, cartSrv) {
 
     $http.post("model/products.json").
-    success(function (data) {
+    success(function (data, $status) {
 
         var products = data;
-
+        console.log("Pobrano dane z pliku json");
+        console.log($status);
         $scope.product = products[$routeParams.id];
     }).
     error(function () {
 
         console.log("błąd pobierania danych z pliku json.");
+        console.log($status);
+        
 
     });
     
