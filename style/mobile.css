@@ -19,7 +19,15 @@ html, body {
     display: none;
     
 }
+.cur {
+    width: 220%;
+    height: 200%;
+    transform: rotate(20deg);
+    background: #293e5b;
 
+    bottom: 40%;
+    position: absolute;
+}
 
 #welcome {
     width: 100%;

@@ -74,6 +74,15 @@ html, body {
     
 }
 
+.cur {
+    width: 200%;
+    height: 200%;
+    transform: rotate(20deg);
+    background: #293e5b;
+    bottom: 30%;
+    position: absolute;
+}
+
 .hello {
     font-size: 40px;
     color: #fff;
