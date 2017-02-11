@@ -179,6 +179,7 @@ h2 {
 }
 .skills .content img {
     width: 120px;
+    transition: .3s;
 }
 .skills .content div {
     text-align: center;
@@ -196,6 +197,9 @@ h2 {
 
 .skills .content div:hover h3 {
     opacity: 1;
+}
+.skills .content div:hover img {
+    transform: scale(1.1);
 }
 
 #projects {
