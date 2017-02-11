@@ -181,6 +181,7 @@ h2 {
     width: 120px;
 }
 .skills .content div {
+    text-align: center;
     width: 140px;
     margin: auto;
     padding: 10px 0px;
