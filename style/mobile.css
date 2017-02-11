@@ -256,7 +256,7 @@ h2 {
     color: #fff;
     padding: 5px 0px;
     opacity: 0;
-        transition: .3s;
+    transition: .5s;
 }
 
 .skills .content div:hover h3 {
