@@ -158,49 +158,43 @@ h2 {
     width: 100%;
     height: auto;
     margin: auto;
-    display: flex;
     justify-content: center;
     background: url(../img/apple-1853306_1920.jpg);
     /*    background-attachment: fixed;*/
     background-origin: border-box;
     background-repeat: no-repeat;
-    padding: 20px 0px;
+    padding: 0px 0px;
 }
 
-#skills {
+.skills {
+    margin: auto;
     height: auto;
-    width: 40%;
+    width: 90%;
     font-family: Roboto;
 }
-
-#skills .content div {
-    width: 250px;
+.skills .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills .content img {
+    width: 120px;
+}
+.skills .content div {
+    width: 140px;
     margin: auto;
     padding: 10px 0px;
 }
 
-#skills .content h3 {
-    text-align: left;
+.skills .content div h3 {
+    text-align: center;
     color: #fff;
     padding: 5px 0px;
+    opacity: 0;
 }
 
-#learn {
-    height: auto;
-    width: 40%;
-    font-family: Roboto;
-}
-
-#learn .content div {
-    width: 250px;
-    margin: auto;
-    padding: 10px 0px;
-}
-
-#learn .content h3 {
-    text-align: left;
-    color: #ffffff;
-    padding: 5px 0px;
+.skills .content div:hover h3 {
+    opacity: 1;
 }
 
 #projects {

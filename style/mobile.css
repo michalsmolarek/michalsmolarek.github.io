@@ -211,71 +211,58 @@ h2 {
     width: 100%;
     height: auto;
     margin: auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: url(../img/apple-1853306_1920.jpg);
 /*    background-attachment: fixed;*/
     background-origin: border-box;
     background-repeat: no-repeat;
-    padding: 20px 0px;
+    padding: 0px 0px;
 }
 
 
 #me h2 {
     font-family: Roboto;
     text-align: center;
-    font-size: 20px;
-    padding: 10px 0px;
+    font-size: 30px;
+    padding: 5px 0px;
     color: #fff;
 }
 
-#skills {
+.skills {
     height: auto;
-    width: 80%;
-    
+    width: 90%;
+    margin: auto;
     font-family: Roboto;
 }
-
-#skills .content div {
+.skills .content{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.skills .content img {
+    width: 80px;
+}
+.skills .content div {
     
-    width: 250px;
+    width: 120px;
     margin: auto;
-    padding: 5px 0px;
+    margin: 10px;
     
 }
 
-#skills .content h3{
-    
-    text-align: left;
+.skills .content div h3 {
+    text-align: center;
     color: #fff;
     padding: 5px 0px;
-    
+    opacity: 0;
+        transition: .3s;
 }
 
-
-#learn {
-    height: auto;
-    width: 80%;
-    font-family: Roboto;
+.skills .content div:hover h3 {
+    opacity: 1;
 }
 
-
-#learn .content div {
-    
-    width: 250px;
-    margin: auto;
-    padding: 10px 0px;
-    
-}
-
-#learn .content h3{
-    
-    text-align: left;
-    color: #ffffff;
-    padding: 5px 0px;
-    
-}
 
 #projects {
     padding: 30px 0px;
