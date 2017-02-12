@@ -13,29 +13,29 @@ var menu = document.querySelector(".menu");
         }else {
             menu.classList.add("hidden");
         }
-    
-}, false);
 
+}, false);
 //====================
 
  $(".about").click(function() {
                 $('html, body').animate({
                 scrollTop: $("#about").offset().top
-            
+
                 }, 500);
             });
 
  $(".projects").click(function() {
                 $('html, body').animate({
                 scrollTop: $("#projects").offset().top
-            
+
                 }, 500);
             });
+
 
 
  $(".contact").click(function() {
                 $('html, body').animate({
                 scrollTop: $("#contact").offset().top
-            
+
                 }, 500);
             });

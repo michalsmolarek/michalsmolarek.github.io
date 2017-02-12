@@ -40,7 +40,7 @@ closemenu.addEventListener("click", function(){
     bmenu.style.display = "block";
     closemenu.style.display = "none";
     
-    
+
     
     
 }, false);
