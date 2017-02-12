@@ -32,6 +32,7 @@ body {
     background: #2b415f;
     position: relative;
     margin: auto;
+    overflow: hidden;
 }
 
 .hello {
