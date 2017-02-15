@@ -23,7 +23,9 @@
             <hr>
 
             <a href="#/product/{{$index}}" class="btn btn-info">Szczegóły</a>
-            <button ng-click="addToCart(product)" class="btn btn-success">Dodaj do koszyka</button>
+            <button ng-click="addToCart(product, $index)" class="btn btn-primary">Dodaj do koszyka</button>
+            
+            <span style="opacity:0; transition:.3s;" class="added{{$index}} label label-success">Dodano!</span>
 
         </div>
     </div>

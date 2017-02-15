@@ -1,5 +1,5 @@
 <h1>Lista produktów</h1>
-   <div class="row">
+<div class="row">
     <div class="col-sm-6 ">
 
 
@@ -17,21 +17,21 @@
 
 <div ng-controller="products">
 
-   
-    <div class="alert alert-info" ng-repeat="product in products | filter: search">
 
-        <p>{{product.nazwa}}</p>
-        <p>Waga: {{product.waga}}kg/szt</p>
-        <p>{{product.opis}}.</p>
-        <p>Cena: {{product.cena | number:2}} zł / kg</p>
+    <div class="panel panel-default" ng-repeat="product in products | filter: search">
+        <div class="panel panel-body">
+            <h3>{{product.nazwa}}</h3>
+            <p><span class="label label-info">Waga: {{product.waga}}kg/szt</span></p>
+            <p>{{product.opis}}.</p>
+            <h3><span class="label label-warning">Cena: {{product.cena | number:2}} zł / kg</span></h3>
 
-        <hr>
+            <hr>
 
-        <a href="#/admin/product/edit/{{$index}}" class="btn btn-default">Edytuj</a>
+            <a href="#/admin/product/edit/{{$index}}" class="btn btn-primary">Edytuj</a>
 
-        <button ng-click="delete(product, $index)" class="btn btn-danger pull-right">Usuń</button>
+            <button ng-click="delete(product, $index)" class="btn btn-danger pull-right">Usuń</button>
 
-
+        </div>
     </div>
 
 </div>

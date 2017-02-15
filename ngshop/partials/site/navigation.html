@@ -21,9 +21,10 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a  ng-class="{active : isActive('/cart') }" href="#/cart">Koszyk</a></li>
+                        <li><a  ng-class="{active : isActive('/cart') }" href="#/cart">Koszyk <span class="label label-danger" ng-if="cart > 0">{{cart}}</span></a></li>
                         <li><a  ng-class="{active : isActive('/orders') }" href="#/orders">Zamówienia</a></li>
                         <li><a  ng-class="{active : isActive('/login') }" href="#/login">Logowanie</a></li>
+                        <li><a  ng-class="{active : isActive('/register') }" href="#/register">Rejestracja</a></li>
                         <li><a  ng-class="{active : isActive('/admin/orders') }" href="#/admin/orders">Admin</a></li>
 
                     </ul>

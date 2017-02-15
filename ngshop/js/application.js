@@ -5,14 +5,14 @@ var application = angular.module("shop", ['ngRoute', 'controllersAdmin', 'contro
 application.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
 
     // ======= PRODUCT ADMIN ========
-    
+
     $routeProvider.when('/admin/products', {
 
         controller: 'products',
         templateUrl: 'partials/admin/products.html'
 
     });
-    
+
     $routeProvider.when('/admin/product/edit/:id', {
 
         controller: 'productEdit',
@@ -26,15 +26,15 @@ application.config(['$routeProvider', '$httpProvider', function ($routeProvider,
         templateUrl: 'partials/admin/product-create.html'
 
     });
-        // ======= PRODUCT SITE ========
-    
+    // ======= PRODUCT SITE ========
+
     $routeProvider.when('/products', {
 
         controller: 'siteProducts',
         templateUrl: 'partials/site/products.html'
 
     });
-    
+
     $routeProvider.when('/product/:id', {
 
         controller: 'siteProduct',
@@ -50,7 +50,7 @@ application.config(['$routeProvider', '$httpProvider', function ($routeProvider,
 
     });
 
-    
+
     $routeProvider.when('/admin/user/edit/:id', {
 
         controller: 'userEdit',
@@ -64,18 +64,18 @@ application.config(['$routeProvider', '$httpProvider', function ($routeProvider,
         templateUrl: 'partials/admin/user-create.html'
 
     });
-    
+
     // =============== orders ADMIN ================
-    
+
     $routeProvider.when('/admin/orders', {
 
         controller: 'orders',
         templateUrl: 'partials/admin/orders.html'
 
     });
-    
+
     // =============== orders SITE ================
-    
+
     $routeProvider.when('/orders', {
 
         controller: 'siteOrders',
@@ -84,14 +84,30 @@ application.config(['$routeProvider', '$httpProvider', function ($routeProvider,
     });
 
     // ==========CART ===========
-    
-     $routeProvider.when('/cart', {
+
+    $routeProvider.when('/cart', {
 
         controller: 'cartCtrl',
         templateUrl: 'partials/site/cart.html'
 
     });
-    
+
+    // ============ login  and  register ============/
+    $routeProvider.when('/login', {
+
+        controller: 'login',
+        templateUrl: 'partials/site/login.html'
+
+    });
+
+    $routeProvider.when('/register', {
+
+        controller: 'register',
+        templateUrl: 'partials/site/register.html'
+
+    });
+
+
     // ========other ==========
 
     $routeProvider.otherwise({
@@ -100,7 +116,7 @@ application.config(['$routeProvider', '$httpProvider', function ($routeProvider,
 
     });
 
-    
+
 
 
 }]);

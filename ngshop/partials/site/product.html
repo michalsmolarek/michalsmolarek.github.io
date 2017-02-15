@@ -5,12 +5,14 @@
                 <h2>{{product.nazwa}}
         <span class="label label-warning pull-right">{{product.cena | number:2}} zł / kg</span>
         </h2>
-                <h3><span class="label label-info">Waga: {{product.waga}} kg</span></h3>
+                <h3><span class="label label-warning">Waga: {{product.waga}} kg</span></h3>
                 <hr>
                 <h3>{{product.opis}}</h3>
                 <hr>
-                <a class="btn btn-primary" href="#/products">Powrót</a>
-                <button ng-click="addToCart(product)" class="btn btn-success">Dodaj do koszyka</button>
+                <a class="btn btn-info" href="#/products">Powrót</a>
+                <button ng-click="addToCart(product)" class="btn btn-primary">Dodaj do koszyka</button>
+                
+                <span style="opacity:0;" class="added label label-success">Dodano!</span>
             </div>
         </div>
     </div>

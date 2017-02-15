@@ -1,12 +1,12 @@
 'use strict';
 
-var cotnrollersAdmin = angular.module("controllersAdmin", []);
+var controllersAdmin = angular.module("controllersAdmin", ['angularFileUpload', 'myDirectives']);
 
 
 
 
 
-cotnrollersAdmin.controller('products', ['$scope', '$http', function ($scope, $http) {
+controllersAdmin.controller('products', ['$scope', '$http', function ($scope, $http) {
 
     $http.get("model/products.json").
     success(function (data) {
@@ -22,6 +22,9 @@ cotnrollersAdmin.controller('products', ['$scope', '$http', function ($scope, $h
 
     $scope.delete = function (product, $index) {
 
+        if (!confirm('Czy na pewno usunąć?')) {
+            return false;
+        }
 
         $scope.products.splice($index, 1);
 
@@ -32,7 +35,7 @@ cotnrollersAdmin.controller('products', ['$scope', '$http', function ($scope, $h
 
 }]);
 
-cotnrollersAdmin.controller('productEdit', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+controllersAdmin.controller('productEdit', ['$scope', '$http', '$routeParams', 'FileUploader', function ($scope, $http, $routeParams, FileUploader) {
 
     $http.get("model/products.json").
     success(function (data) {
@@ -54,10 +57,26 @@ cotnrollersAdmin.controller('productEdit', ['$scope', '$http', '$routeParams', f
 
     };
 
+    var uploader = $scope.uploader = new FileUploader({
+        url: '' // ścieżka do PHP
+    });
+
+    uploader.filters.push({
+        name: 'imageFilter',
+        fn: function (item /*{File|FileLikeObject}*/ , options) {
+            var type = '|' + item.type.slice(item.type.lastIndexOf('/') + 1) + '|';
+            return '|jpg|png|jpeg|bmp|gif|'.indexOf(type) !== -1;
+        }
+    });
+
+    uploader.onCompleteItem = function (fileItem, response, status, headers) {
+        console.info('onCompleteItem', fileItem, response, status, headers);
+    };
+
 }]);
 
 
-cotnrollersAdmin.controller('userEdit', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+controllersAdmin.controller('userEdit', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
     $http.get("model/users.json").
     success(function (data) {
@@ -83,7 +102,7 @@ cotnrollersAdmin.controller('userEdit', ['$scope', '$http', '$routeParams', func
 }]);
 
 
-cotnrollersAdmin.controller('productCreate', ['$scope', '$http', function ($scope, $http) {
+controllersAdmin.controller('productCreate', ['$scope', '$http', function ($scope, $http) {
 
     $scope.createProduct = function () {
 
@@ -95,7 +114,7 @@ cotnrollersAdmin.controller('productCreate', ['$scope', '$http', function ($scop
 
 }]);
 
-cotnrollersAdmin.controller('userCreate', ['$scope', '$http', function ($scope, $http) {
+controllersAdmin.controller('userCreate', ['$scope', '$http', function ($scope, $http) {
 
     $scope.createUser = function () {
 
@@ -108,7 +127,7 @@ cotnrollersAdmin.controller('userCreate', ['$scope', '$http', function ($scope, 
 }]);
 
 
-cotnrollersAdmin.controller('users', ['$scope', '$http', function ($scope, $http) {
+controllersAdmin.controller('users', ['$scope', '$http', function ($scope, $http) {
 
 
     $http.get("model/users.json").
@@ -126,6 +145,9 @@ cotnrollersAdmin.controller('users', ['$scope', '$http', function ($scope, $http
     $scope.delete = function (user, $index) {
 
 
+        if (!confirm('Czy na pewno usunąć?')) {
+            return false;
+        }
         $scope.users.splice($index, 1);
 
         console.log("usunięto");
@@ -135,7 +157,7 @@ cotnrollersAdmin.controller('users', ['$scope', '$http', function ($scope, $http
 }]);
 
 
-cotnrollersAdmin.controller('orders', ['$scope', '$http', function ($scope, $http) {
+controllersAdmin.controller('orders', ['$scope', '$http', function ($scope, $http) {
 
 
     $http.get("model/orders.json").
@@ -152,6 +174,9 @@ cotnrollersAdmin.controller('orders', ['$scope', '$http', function ($scope, $htt
 
     $scope.delete = function (order, $index) {
 
+        if (!confirm('Czy na pewno usunąć?')) {
+            return false;
+        }
         $scope.orders.splice($index, 1);
 
         console.log("usunięto");

@@ -1,20 +1,22 @@
-<form name="myForm" ng-submit="setOrder($event)" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<form id="paypalForm" name="myForm" ng-submit="setOrder($event)" action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <div class="row">
         <div class="col-sm-12">
             <h1>Twój koszyk</h1>
-
-            <div class="alert alert-info" ng-if="!cart.length">Twój koszyk jest pusty.</div>
+            
+            <div ng-if="alert" class="alert alert-{{alert.type}}">{{alert.msg}}</div>
+            <div class="alert alert-info" ng-if="!cart.length && alert.type != 'success'">Twój koszyk jest pusty.</div>
+            
 
             <div ng-if="cart.length">
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <td>Nazwa produktu</td>
-                            <td>Waga</td>
-                            <td>Ilość</td>
-                            <td>Cena</td>
-                            <td>Razem</td>
-                            <td>Usuń</td>
+                            <th>Nazwa produktu</th>
+                            <th>Waga</th>
+                            <th>Ilość</th>
+                            <th>Cena</th>
+                            <th>Razem</th>
+                            <th>Usuń</th>
                         </tr>
                     </thead>
                     <tbody>

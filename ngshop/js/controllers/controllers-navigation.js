@@ -4,7 +4,7 @@ var controllersNavigation = angular.module("controllersNavigation", []);
 
 
 
-controllersNavigation.controller('navigation', ['$scope', '$location','cartSrv', function ($scope, $location, cartSrv) {
+controllersNavigation.controller('navigation', ['$scope', '$location', 'cartSrv', function ($scope, $location, cartSrv) {
 
     $scope.navigation = function () {
 
@@ -14,11 +14,16 @@ controllersNavigation.controller('navigation', ['$scope', '$location','cartSrv',
             return 'partials/site/navigation.html';
         }
 
-    }; 
-    
-    $scope.isActive = function(path){
+    };
+
+    $scope.isActive = function (path) {
         return $location.path() == path;
     };
-    
+    $scope.$watch(function () {
+        $scope.cart = cartSrv.show().length;
+    });
+
+
+
 
 }]);
