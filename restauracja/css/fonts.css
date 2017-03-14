@@ -1,0 +1,22 @@
+
+
+@font-face {
+    font-family: 'playfairDisplay';
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SintonyRegular';
+    src: url(../fonts/Sintony-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'robotoRegular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'robotoLight';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
