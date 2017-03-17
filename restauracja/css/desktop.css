@@ -237,17 +237,18 @@ main .menu h1 {
 }
 
 .tab-content {
-    width: 100%;
+    width: 90%;
     text-align: left;
     padding: 20px 0px;
     margin: auto;
 }
 
-.tab-content div {
+.tab-content div ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .tab-content div li {
     width: 400px;
@@ -258,9 +259,6 @@ main .menu h1 {
     margin: 0px 20px;
 }
 
-.tab-content div li:last-child {
-    border: none;
-}
 
 .tab-content h3 {
     padding: 10px 0px;
@@ -276,7 +274,7 @@ main .menu h1 {
 .tab-content div p {
     font-family: 'robotoLight';
     font-size: 13px;
-    width: 340px;
+    width: 100%;
 }
 
 .tab-content div .price {
