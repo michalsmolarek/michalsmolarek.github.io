@@ -190,7 +190,7 @@
         top: 70px;
         right: 0;
         left: 0;
-        margin: 0;
+        margin: auto;
         padding: 0;
         font-size: 28px;
     }
@@ -222,6 +222,14 @@
     
     .cometous {
         font-size: 25px;
+        text-align: center;
+    }
+    .callus p {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: none;
     }
 
 }
