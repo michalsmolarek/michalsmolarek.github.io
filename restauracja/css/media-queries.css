@@ -133,9 +133,9 @@
         background-size: 200%;
     }
     .tab-content {
-        width: 95%;
+        width: 80%;
         padding: 0;
-        margin: 0;
+        margin: auto;
     }
     .tab-content div li:last-child {
         border-bottom: 1px solid #cbcbcb;
@@ -147,7 +147,7 @@
         color: #e39336;
     }
     .tab-content div li {
-        width: 98%;
+        width: 90%;
     }
     .about .desc {
         width: 90%;
