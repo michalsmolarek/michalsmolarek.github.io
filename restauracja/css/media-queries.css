@@ -148,10 +148,11 @@
     .nav-tabs a {
         display: block;
         text-align: center;
-        padding: 0px 5px;
-        width: 60%;
+        padding: 5px 5px;
         color: #e39336;
+        font-size: .9em;
     }
+    
     .tab-content div li {
         width: 100%;
         margin: auto;
