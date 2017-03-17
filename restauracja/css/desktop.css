@@ -48,6 +48,7 @@ nav.mainNavbar a:hover {
 
 main {
     font-family: 'robotoLight';
+    background: #fff;
 }
 
 main .slider {
@@ -61,7 +62,6 @@ main .slider-text {
     left: 15%;
     color: #fff;
     font-family: 'playfairDisplay';
-
 }
 
 .slider-text h2 {
@@ -144,6 +144,7 @@ main .slider-text {
     min-height: 400px;
     justify-content: space-around;
     flex-wrap: wrap;
+    background: #fff;
 }
 
 .about .desc h2 {
@@ -167,11 +168,10 @@ main .slider-text {
 
 .grid {
     display: flex;
-    width: 58%;
+    width: 600px;
     flex-wrap: wrap;
     justify-content: center;
     height: 380px;
-    
 }
 
 .grid img {
@@ -201,6 +201,7 @@ main .menu {
     width: 100%;
     margin: auto;
     margin-top: 30px;
+    background: #fff;
 }
 
 main .menu h1 {
@@ -208,7 +209,6 @@ main .menu h1 {
     text-align: center;
     padding: 20px 0px;
     font-size: 40px;
-    
 }
 
 #tabs {
@@ -219,7 +219,8 @@ main .menu h1 {
 }
 
 .nav-tabs {
-    width:100%;
+    width: 100%;
+    height: 70px;
     padding: 20px 0px;
     display: flex;
     justify-content: center;
@@ -227,7 +228,8 @@ main .menu h1 {
     -webkit-background-size: 100%;
     background-size: 100%;
 }
-.nav-tabs a{
+
+.nav-tabs a {
     display: block;
     text-align: center;
     padding: 5px 20px;
@@ -239,14 +241,14 @@ main .menu h1 {
     text-align: left;
     padding: 20px 0px;
     margin: auto;
-
-    
 }
+
 .tab-content div {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 .tab-content div li {
     width: 400px;
     height: 70px;
@@ -254,21 +256,22 @@ main .menu h1 {
     border-bottom: 1px solid #cbcbcb;
     padding: 10px 0px;
     margin: 0px 20px;
-    
 }
-.tab-content div li:last-child{
-    border:none;
+
+.tab-content div li:last-child {
+    border: none;
 }
+
 .tab-content h3 {
     padding: 10px 0px;
     font-size: 25px;
     text-align: center;
 }
 
-.tab-content div h4{
+.tab-content div h4 {
     font-size: 17px;
     padding: 10px 0px;
-} 
+}
 
 .tab-content div p {
     font-family: 'robotoLight';
@@ -287,7 +290,8 @@ main .menu h1 {
 .active {
     border-bottom: 3px solid #ff9e2d;
 }
-.tab-content div h3{
+
+.tab-content div h3 {
     width: 100%;
 }
 
@@ -297,8 +301,6 @@ main .menu h1 {
     font-family: 'playfairDisplay';
     padding: 50px 0px;
     width: 100%;
-
-    
 }
 
 .map {
@@ -306,11 +308,10 @@ main .menu h1 {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
 }
 
-
-.gmap   {
+.gmap {
     width: 600px;
     height: 320px;
     background: #4e9862;
@@ -326,7 +327,6 @@ main .menu h1 {
     margin-top: 30px;
     padding: 20px;
     height: 220px;
-   
 }
 
 .callus {
@@ -344,6 +344,7 @@ main .menu h1 {
     width: 185px;
     border-right: 1px solid #c4c4c4;
 }
+
 .callus p:nth-child(2) {
     font-size: 18px;
     color: #cc6193;
@@ -374,6 +375,7 @@ footer nav h2 {
     font-family: 'playfairDisplay';
     font-size: 25px;
 }
+
 footer nav {
     position: absolute;
     top: 50px;
@@ -383,6 +385,7 @@ footer nav {
 footer nav li {
     margin: 10px 0px;
 }
+
 footer nav li a {
     color: #7b7c8e;
     display: block;
@@ -395,11 +398,11 @@ footer nav li a {
     align-items: center;
     font-size: 25px;
     position: absolute;
-    top:120px;
+    top: 120px;
     left: 50%;
 }
 
-.fb img{
+.fb img {
     width: 70px;
     margin-right: 10px;
 }
@@ -414,12 +417,14 @@ footer nav li a {
     color: #7b7c8e;
     font-size: 15px;
 }
+
 .copy p {
     background: #292b48;
     width: 300px;
     margin: auto;
 }
-.copy-b{
+
+.copy-b {
     height: 1px;
     border-bottom: 1px solid #7b7c8e;
     position: absolute;
@@ -429,4 +434,3 @@ footer nav li a {
     right: 0px;
     left: 0px;
 }
-

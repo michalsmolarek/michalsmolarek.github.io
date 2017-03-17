@@ -1,4 +1,5 @@
 
+
 var menu = document.querySelector(".menu");
 
 
@@ -16,6 +17,7 @@ var menu = document.querySelector(".menu");
 
 }, false);
 //====================
+
 
  $(".about").click(function() {
                 $('html, body').animate({

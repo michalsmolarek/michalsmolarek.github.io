@@ -29,8 +29,7 @@ bmenu.addEventListener("click", function(){
     topmenu.style.top = "90px";
     closemenu.style.display = "block";
     bmenu.style.display = "none";
-    
-    
+
     
 }, false);
 

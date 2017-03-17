@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Restauracja Kocioł | Dobrodzień</title>
 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta name="Keywords" content="Restauracja,Kocioł , Dobrodzień, pizza, jedzenie, dania, pyszne, knajpa ">
 
     <meta name="description" content="Restauracja Kocioł - Dobrodzień">
@@ -36,6 +38,10 @@
     <!-- STYLE FOR DESKTOPS -->
     <link rel="stylesheet" type="text/css" href="css/desktop.css">
 
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+
+
+
 
 </head>
 
@@ -45,6 +51,7 @@
         <div class="logo">
             <h1>KOCIOŁ</h1><img src="images/goracedania.png" alt=""></div>
         <nav class="mainNavbar">
+
             <ul>
                 <li><a href="#">STRONA GŁÓWNA</a></li>
                 <li><a href="#">MENU</a></li>
@@ -53,6 +60,16 @@
                 <li><a href="#">GALERIA</a></li>
             </ul>
         </nav>
+        <div id="m-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="m-button-close">
+            <div></div>
+            <div></div>
+
+        </div>
     </header>
 
     <main>
@@ -515,13 +532,13 @@
 	-->
 
     <script src="js/jquery.min.js"></script>
-    
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.bxslider').bxSlider();
         });
         $('.bxslider').bxSlider({
@@ -530,7 +547,7 @@
         });
     </script>
     <script>
-        $(function () {
+        $(function() {
             $("#tabs").tabs();
         });
     </script>
