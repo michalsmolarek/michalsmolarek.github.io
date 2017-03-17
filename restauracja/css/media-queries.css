@@ -120,8 +120,7 @@
     nav.mainNavbar {
         top: -380px;
         z-index: 10;
-        left: 0;
-        right: 0;
+        right: 43%;
         margin: auto;
         width: 55%;
         transition: .5s;
