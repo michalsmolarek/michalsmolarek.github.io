@@ -41,12 +41,19 @@
     <div class="menu showmenu hidden">
 
         <div class="home">
-            <a href="index.html"><img src="img/home.png" alt="home"></a>
+            <a href="index.html">
+                <img src="img/home.png" alt="home">
+            </a>
         </div>
-        <div class="about"><img src="img/about.png" alt="about">
+        <div class="about">
+            <img src="img/about.png" alt="about">
         </div>
-        <div class="projects"><img src="img/projects.png" alt="projects"></div>
-        <div class="contact"><img src="img/contact.png" alt="contact"></div>
+        <div class="projects">
+            <img src="img/projects.png" alt="projects">
+        </div>
+        <div class="contact">
+            <img src="img/contact.png" alt="contact">
+        </div>
 
     </div>
 
@@ -68,10 +75,18 @@
 
 
             <ul>
-                <li><a class="contact" href="#">Kontakt</a></li>
-                <li><a class="projects" href="#">Projekty</a></li>
-                <li><a class="about" href="#">O mnie</a></li>
-                <li><a class="home" href="index.html">Główna</a></li>
+                <li>
+                    <a class="contact" href="#">Kontakt</a>
+                </li>
+                <li>
+                    <a class="projects" href="#">Projekty</a>
+                </li>
+                <li>
+                    <a class="about" href="#">O mnie</a>
+                </li>
+                <li>
+                    <a class="home" href="index.html">Główna</a>
+                </li>
             </ul>
 
 
@@ -92,7 +107,8 @@
             <p>Mam na imię Michał i jestem początkującym programistą.</p>
             <p>Obecnie studiuję na drugim roku informatyki o specjalizacji: programowanie i bazy danych.</p>
             <p>Z programowaniem wiążę przyszłość, dlatego poświęcam wiele wolnego czasu, aby doskonalić swoje umiejętności.</p>
-            <p>Uważam, że w tym zawodzie technologia nie gra roli. Dlatego znam podstawy kilku z popularniejszych, ale specjalizuje się w Androidzie.</p>
+            <p>Uważam, że w tym zawodzie technologia nie gra roli. Dlatego znam podstawy kilku z popularniejszych, ale specjalizuje
+                się w Androidzie.</p>
 
         </div>
     </div>
@@ -175,7 +191,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- end skills -->
     </div>
     <!-- END ME -->
@@ -184,54 +200,59 @@
     <div id="projects">
         <h2>Moje niektóre projekty:</h2>
         <div class="content">
-
-                <div class="project">
-                        <a href="http://niebieskiemigdaly.eu" target="_blank">
-                            <img src="img/niebieskie.png" alt="Coming soon">
-                        </a>
-                        <p>Strona restauracji</p>
-                    </div>
+            <div class="project">
+                <a href="http://autobios.pl" target="_blank">
+                    <img src="img/autobios.png" alt="autobios">
+                </a>
+                <p>Strona warszatu.</p>
+            </div>
+            <div class="project">
+                <a href="http://niebieskiemigdaly.eu" target="_blank">
+                    <img src="img/niebieskie.png" alt="niebieskie migdaly">
+                </a>
+                <p>Strona restauracji</p>
+            </div>
 
             <div class="project">
-    
+
 
                 <a href="http://ms-shop.pe.hu" target="_blank">
                     <img src="img/msshop.png" alt="ms-shop">
                 </a>
-                <p>Ms-shop - fikcyjny sklep internetowy.</p>
+                <p>Fikcyjny sklep internetowy.</p>
             </div>
             <div class="project">
 
-                    <img src="img/tip.png" alt="tip">
+                <img src="img/tip.png" alt="tip">
                 <p>Aplikacja do obliczania napiwków.</p>
             </div>
             <div class="project">
 
-                    <img src="img/fibo.png" alt="tip">
+                <img src="img/fibo.png" alt="tip">
                 <p>Aplikacja do obliczania n-tego wyrazu ciągu Fibbonaciego.</p>
             </div>
             <div class="project">
-                    
+
                 <img src="img/flagi.png" alt="tip">
                 <p>Gra quiz z flagami.</p>
             </div>
             <div class="project">
-                    
+
                 <img src="img/phrase.png" alt="tip">
                 <p>Aplikacja Phrase - znajdź wpisaną frazę.</p>
             </div>
             <div class="project">
-                    
+
                 <img src="img/calc.png" alt="tip">
                 <p>Aplikacja kalkulator.</p>
             </div>
             <div class="project">
-                    
+
                 <img src="img/crud.png" alt="tip">
                 <p>Aplikacja typu CRUD (Create, Read, Update, Delete).</p>
             </div>
-            
- 
+
+
 
         </div>
     </div>
@@ -259,9 +280,11 @@
     <script src="js/scripts.js"></script>
     <script src="js/typed.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $(".hello").typed({
-                strings: ["Cześć, jestem Michał", "Jestem początkującym programistą.", "Witaj na mojej stronie."],
+                strings: ["Cześć, jestem Michał", "Jestem początkującym programistą.",
+                    "Witaj na mojej stronie."
+                ],
                 typeSpeed: 0
             });
         });
