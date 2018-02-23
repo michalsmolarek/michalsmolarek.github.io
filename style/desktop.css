@@ -297,7 +297,7 @@ h2 {
     padding: 30px;
 
     max-height: 300px;
-    margin: auto;
+    margin: 10px auto;
     transition: .3s;
     
 }
@@ -312,6 +312,7 @@ h2 {
 #projects .project p {
     max-width: 200px;
     color: #fff;
+    padding: 10px 0px;
 }
 #projects .project div {
     opacity:0;
