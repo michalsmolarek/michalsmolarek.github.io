@@ -294,6 +294,7 @@ h2 {
 #projects .project{
     position: relative;
     padding: 30px;
+    margin-top: 10px;
     max-height: 300px;
     margin: auto;
     transition: .3s;
