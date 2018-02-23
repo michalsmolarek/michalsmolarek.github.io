@@ -304,7 +304,7 @@ h2 {
 #projects .project img {
     max-height: 300px;
     width: auto;
-    margin: 10px 0px;
+    margin: -10px 0px;
     text-align: center;
 
 }
