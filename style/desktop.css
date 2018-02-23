@@ -281,6 +281,7 @@ h2 {
     text-align: center;
     width: 100%;
     border-radius: 10px;
+    margin-top: 10px 0px;
     
 }
 
@@ -294,7 +295,7 @@ h2 {
 #projects .project{
     position: relative;
     padding: 30px;
-    margin-top: 10px;
+
     max-height: 300px;
     margin: auto;
     transition: .3s;
@@ -365,7 +366,6 @@ h2 {
 /*    background: rgba(255, 255, 255, 0.27);*/
     padding: 10px;
     margin: 10px;
-    line-height: ;
     
 }
 
