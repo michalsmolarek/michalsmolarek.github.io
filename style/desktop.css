@@ -277,13 +277,6 @@ h2 {
     
 }
 
-#projects .project img {
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-    
-    
-}
 
 #projects .project:hover {
     
@@ -295,7 +288,10 @@ h2 {
 #projects .project{
     position: relative;
     padding: 30px;
-
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    
     max-height: 300px;
     margin: auto;
     transition: .3s;
